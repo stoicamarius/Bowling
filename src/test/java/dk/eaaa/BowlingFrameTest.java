@@ -43,7 +43,7 @@ public class BowlingFrameTest {
 	
 	@Test
 	public void testIsNotSpareItIsStrike() throws Exception {
-		frame.rollFirst(10);
+		frame.rollFirst(-2);
 		assertFalse(frame.isSpare());
 		assertTrue(frame.isStrike());
 	}
